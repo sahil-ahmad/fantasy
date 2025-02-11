@@ -1,0 +1,34 @@
+/* Styling the section header */
+.section-header {
+  position: relative; /* Ensure child elements can be positioned relative to it */
+}
+
+.slider-nav-area {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  margin-top: 10px; /* Adjust as needed */
+}
+
+.slider-prev,
+.slider-next {
+  font-size: 24px;
+  color: #333;
+  cursor: pointer;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.5); /* Optional, for better visibility */
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.slider-prev:hover,
+.slider-next:hover {
+  background-color: rgba(0, 123, 255, 0.2); /* Change color on hover */
+}
+
+/* Adjust slick-slider settings */
+.slick-slide {
+  padding: 10px; /* Adjust slide padding if necessary */
+}

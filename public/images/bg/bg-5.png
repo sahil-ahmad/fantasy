@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>404 - Fookri</title>
+ 
+    <!-- Primary Meta Tags -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <meta property="og:type" content="website">
+    <meta name=keywords content="" />
+    <meta name=description content="" />
+    <meta name=og:title content="Tittle " />
+    <meta name=og:description content="  " />
+    <meta property="og:url" content="">
+    <!-- Primary Meta Tags -->
+    <meta name="robots" content="follow, index" />
+    <meta name="google-site-verification" content="ZUQKtCTk9AhMiBg8Wsr4oUTE8aazJmVNshloYVqclHo" /> 
+    <link href="https://Fookri.co.in/404.html" rel="canonical">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.2/css/all.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" rel="preload">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/header.css" rel="preload">
+    <link rel="stylesheet" type="text/css" href="./css/footer.css" rel="preload">
+    <link rel="stylesheet" type="text/css" href="./css/style.css" rel="preload">
+    <link rel="stylesheet" href="./css/font-awesome.css" />
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/fontawesome-all.min.css">
+        <!-- bootstrap css link -->
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <!-- swipper css link -->
+        <link rel="stylesheet" href="./css/swiper.min.css">
+        <!-- animate.css -->
+        <link rel="stylesheet" href="./css/animate.css">
+        <!-- main style css link -->
+        <link rel="stylesheet" href="./css/style.css">   
+</head>
+
+<body>
+
+    <header id="header"></header>
+
+    <div class="error_pageOuter page-error">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-12 text-center">
+                    <h2 class="display-1 d-block mb-0 "><strong>404</strong></h2>
+                    <h3 class="mb-4 lead">The page you are looking for was not found.</h3>
+                    <a href="https://Fookri.co.in/" class="mt-4 download_Btn">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer"></footer>
+
+
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.bundle.min.js"></script>
+    <script defer src="./js/carousel.js"></script>
+    <!-- bootstrap js -->
+    <script src="./js/bootstrap.min.js"></script>
+    <!-- swipper js -->
+    <script src="./js/swiper.min.js"></script>
+    <!-- lightcase js-->
+    <script src="./js/lightcase.js"></script>
+    <!-- aos js file -->
+    <script src="./js/aos.js"></script>
+    <!-- nice select js -->
+    <script src="./js/jquery.nice-select.js"></script>
+    <!-- paroller js -->
+    <script src="./js/jquery.paroller.min.js"></script>
+    <!-- preloader js -->
+    <script src="./js/preloader.js"></script>
+    <!-- main -->
+    <script src="./js/main.js"></script>    
+<script>
+     $("#header").load("header.html ");
+        $("#footer").load("footer.html ");
+
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 1) {
+                $('header').addClass("sticky_header ");
+            } else {
+                $('header').removeClass("sticky_header ");
+            }
+        });
+
+        $(window).on('load', function () {
+            var host = window.location.protocol + "//" + window.location.hostname;
+            if(window.location.pathname.startsWith("/Fookri")){
+                host+="/Fookri"
+            }
+            var location=window.location.href;
+            console.log("location",location);
+            if(!location.endsWith('404.html')){
+                window.location.replace(host+"/404.html");
+            }
+            // loadCmsContent("404.html ");
+        });         
+</script>    
+
+</body>
+
+</html>
