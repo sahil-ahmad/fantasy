@@ -9,6 +9,8 @@ import Howtoplay from "./components/Howtoplay";
 import FantasyPoint from "./components/FantasyPoint";
 import Contact from "./components/Contact";
 import ScrollToTopButton from "./ScrollToTopButton";
+import TermCondition from "./components/TermCondition";
+import PrivacyPolicy from "./components/PrivacyPolicy";
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
         <Route path="/Howtoplay" element={<Howtoplay />} />
         <Route path="/FantasyPoint" element={<FantasyPoint />} />
         <Route path="/Contact" element={<Contact />} />
+        <Route path="/TermCondition" element={<TermCondition />} />
+        <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
       </Routes>
       <Footer />
       <ScrollToTopButton/>
