@@ -14,9 +14,7 @@ const Home = () => {
           backgroundImage: "url(./images/bg/bg-5.png)",
         }}
       >
-        <div className="banner-element">
-          <img src="./images/element/element-7.png" alt="Fookri" />
-        </div>
+      
         <div className="banner-element-two">
           <img src="./images/element/element-26.png" alt="Fookri" />
         </div>
